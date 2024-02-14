@@ -129,8 +129,10 @@ textarea {
 }
 
 body {
-  font-family: "Causten";
-  color: #807d7e;
+  font-family: "Poppins";
+  font-size: 1rem;
+  color: #9c9c9c;
+  background-color: #0d0d11;
 }
 
 .wrapper {
@@ -152,7 +154,7 @@ body {
 }
 
 [class*=__container] {
-  max-width: 79.375rem;
+  max-width: 81.875rem;
   margin: 0 auto;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
