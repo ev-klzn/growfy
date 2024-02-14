@@ -1,0 +1,41 @@
+[class*="_icon-"]::before {
+	display: inline-block;
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+._icon-bg-points:before {
+	content: "\e900";
+}
+._icon-more:before {
+	content: "\e901";
+}
+._icon-poin:before {
+	content: "\e902";
+}
+._icon-star:before {
+	content: "\e908";
+}
+._icon-facebook2:before {
+	content: "\ea91";
+}
+._icon-instagram:before {
+	content: "\ea92";
+}
+._icon-youtube:before {
+	content: "\ea9d";
+}
+._icon-linkedin:before {
+	content: "\eac9";
+}
+._icon-xing:before {
+	content: "\ead3";
+}
+
+// --------------------------
