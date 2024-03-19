@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240318162353">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240319165245">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,16 +15,122 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__container"></div>
+			<div class="header__container">
+				<div class="header__logo"><img src="img/logo.svg" alt="logo" /></div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">About</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Pages</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div data-da=".menu__body, 767.98" class="header__action action-header">
+					<a href="#" class="action-header__link">Services</a>
+					<a href="#" class="action-header__link">Cart</a>
+					<button class="action-header__button button">
+						<span>Get started</span>
+					</button>
+				</div>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
 		</header>
 
 		<main class="page page__container"></main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__column">
+						<div class="footer__logo"><img src="img/logo.svg" alt="Image" /></div>
+						<div class="footer__content content">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+								voluptatum necessitatibus iure. Minus unde reprehenderit, recusandae
+								neque, expedita inventore quae adipisci, id aperiam assumenda qui
+								sed sapiente corporis obcaecati totam porro? Quia laboriosam ullamd.
+							</p>
+						</div>
+						<div class="footer__social social">
+							<a href="#" target="_blank" class="social__item _icon-facebook2"></a>
+							<a href="#" target="_blank" class="social__item _icon-instagram"></a>
+							<a href="#" target="_blank" class="social__item _icon-youtube"></a>
+							<a href="#" target="_blank" class="social__item _icon-linkedin"></a>
+							<a href="#" target="_blank" class="social__item _icon-xing"></a>
+						</div>
+					</div>
+
+					<div class="footer__column" data-spollers="767.98, max">
+						<details class="footer-menu">
+							<summary class="footer-menu__title">Pages</summary>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Home</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer-menu__link">About</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer-menu__link">Services</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer-menu__link">Blog</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer-menu__link">Contact</a>
+								</li>
+							</ul>
+						</details>
+					</div>
+
+					<div class="footer__column" data-spollers="767.98, max">
+						<details class="footer-menu">
+							<summary class="footer-menu__title">Utility pages</summary>
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="#" class="footer-menu__link">Instructions</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer-menu__link">Style guide</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer-menu__link">Licenses</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer-menu__link">Changelog</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer-menu__link">Password protected</a>
+								</li>
+							</ul>
+						</details>
+					</div>
+
+					<div class="footer__column">
+						<h4 class="footer__title">Subscribe to our newsletter</h4>
+						<div class="footer__content content">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+								voluptatum necessitatibus iure. Minus unde reprehenderit,
+								recusandae.
+							</p>
+						</div>
+						<div class="subscribe">
+							<form class="subscribe__form" action="files/sendmail/sendmail.php" method="POST">
+								<input type="text" name="form[email]" data-error="Enter your email" data-required="email" autocomplete="off" placeholder="Enter your email" class="subscribe__input input" />
+								<button type="submit" class="subscribe__button button">
+									Subscribe
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copy">Copy</div>
 			</div>
 		</footer>
+
 	</div>
-	<script src="js/app.min.js?_v=20240318162353"></script>
+	<script src="js/app.min.js?_v=20240319165245"></script>
 </body>
 
 </html>
