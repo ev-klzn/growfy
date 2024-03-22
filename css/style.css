@@ -16,32 +16,23 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
 }
-._icon-bg-points:before {
+._icon-point:before {
   content: "\e900"
 }
-._icon-more:before {
+._icon-s-fb:before {
   content: "\e901"
 }
-._icon-poin:before {
+._icon-s-in:before {
   content: "\e902"
 }
-._icon-star:before {
-  content: "\e908"
+._icon-s-ins:before {
+  content: "\e903"
 }
-._icon-facebook2:before {
-  content: "\ea91"
+._icon-s-tw:before {
+  content: "\e904"
 }
-._icon-instagram:before {
-  content: "\ea92"
-}
-._icon-youtube:before {
-  content: "\ea9d"
-}
-._icon-linkedin:before {
-  content: "\eac9"
-}
-._icon-xing:before {
-  content: "\ead3"
+._icon-s-yt:before {
+  content: "\e905"
 }
 * {
   padding: 0;
@@ -346,12 +337,11 @@ body {
   display: block
 }
 .social {
-  display: flex;
-  flex-wrap: wrap
+  display: flex
 }
 .social__item {
   transition: color .3s;
-  font-size: 2.25rem
+  font-size: 2.875rem
 }
 .footer-menu {
   display: grid;
@@ -671,7 +661,10 @@ body {
 .item-testimonials__img img {
   width: 100%;
   height: 100%;
-  aspect-ratio: 1/1
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 0 3.9375rem 3.9375rem 3.9375rem
 }
 .item-testimonials__unit {
   display: grid;
@@ -758,7 +751,10 @@ body {
     padding-bottom: 2.8125rem
   }
   .social {
-    gap: 1.875rem
+    margin-left: -.8125rem
+  }
+  .social {
+    gap: .9375rem
   }
   .footer-menu {
     padding-left: 1.25rem
@@ -946,7 +942,10 @@ body {
     padding-bottom: 1.875rem
   }
   .social {
-    gap: .9375rem
+    margin-left: -.875rem
+  }
+  .social {
+    gap: .625rem
   }
   .footer-menu {
     padding-left: .9375rem
@@ -1323,6 +1322,9 @@ body {
   .footer__body {
     row-gap: 1.25rem
   }
+  .social {
+    margin-left: .0625rem
+  }
 }
 @media (max-width:47.99875em) and (any-hover:none) {
   .icon-menu {
@@ -1335,6 +1337,9 @@ body {
   }
   .footer__body {
     row-gap: 1.875rem
+  }
+  .social {
+    margin-left: .0000000625rem
   }
 }
 @media (max-width:47.99875em) and (min-width:20em) and (max-width:81.875em) {
@@ -1356,6 +1361,16 @@ body {
   @supports not (row-gap:clamp(1.25rem ,1.047979798rem + 1.0101010101vw ,1.875rem)) {
     .footer__body {
       row-gap: calc(1.25rem + .625 * (100vw - 20rem)/ 61.875)
+    }
+  }
+  @supports (margin-left:clamp(0.0000000625rem ,0.082702rem + -0.10101vw ,0.0625rem)) {
+    .social {
+      margin-left: clamp(.0000000625rem ,.082702rem + -.10101vw ,.0625rem)
+    }
+  }
+  @supports not (margin-left:clamp(0.0000000625rem ,0.082702rem + -0.10101vw ,0.0625rem)) {
+    .social {
+      margin-left: calc(.0625rem + -.0624999375 * (100vw - 20rem)/ 61.875)
     }
   }
 }
@@ -1470,14 +1485,24 @@ body {
       padding-bottom: calc(1.875rem + .9375 * (100vw - 20rem)/ 61.875)
     }
   }
-  @supports (gap:clamp(0.9375rem ,0.634469697rem + 1.5151515152vw ,1.875rem)) {
+  @supports (margin-left:clamp(-0.875rem ,-0.8952020202rem + 0.101010101vw ,-0.8125rem)) {
     .social {
-      gap: clamp(.9375rem ,.634469697rem + 1.5151515152vw ,1.875rem)
+      margin-left: clamp(-.875rem ,-.8952020202rem + .101010101vw ,-.8125rem)
     }
   }
-  @supports not (gap:clamp(0.9375rem ,0.634469697rem + 1.5151515152vw ,1.875rem)) {
+  @supports not (margin-left:clamp(-0.875rem ,-0.8952020202rem + 0.101010101vw ,-0.8125rem)) {
     .social {
-      gap: calc(.9375rem + .9375 * (100vw - 20rem)/ 61.875)
+      margin-left: calc(-.875rem + .0625 * (100vw - 20rem)/ 61.875)
+    }
+  }
+  @supports (gap:clamp(0.625rem ,0.523989899rem + 0.5050505051vw ,0.9375rem)) {
+    .social {
+      gap: clamp(.625rem ,.523989899rem + .5050505051vw ,.9375rem)
+    }
+  }
+  @supports not (gap:clamp(0.625rem ,0.523989899rem + 0.5050505051vw ,0.9375rem)) {
+    .social {
+      gap: calc(.625rem + .3125 * (100vw - 20rem)/ 61.875)
     }
   }
   @supports (padding-left:clamp(0.9375rem ,0.836489899rem + 0.5050505051vw ,1.25rem)) {
