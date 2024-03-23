@@ -292,9 +292,6 @@ body {
   line-height: 1.6;
   transition: .3s color
 }
-.menu__link:hover {
-  color: #3d96f4
-}
 .action-header {
   display: flex;
   flex-wrap: wrap;
@@ -593,7 +590,9 @@ body {
   color: green;
   padding: .5rem;
   background-color: rgba(129,129,139,.1);
-  border-radius: 50%
+  border-radius: 50%;
+  opacity: 2;
+  transition: .5s ease
 }
 .achievements {
   display: grid;
@@ -2434,6 +2433,9 @@ body {
   [data-rating=set] .rating__item:hover ~ .rating__item span {
     display: none
   }
+  .menu__link:hover {
+    color: #3d96f4
+  }
   .ev-klzn:hover {
     color: #3d96f4
   }
@@ -2442,6 +2444,10 @@ body {
   }
   .footer-menu__link:hover {
     color: #3d96f4
+  }
+  .choose__goal:hover::before {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg)
   }
   .item-blog__title:hover {
     color: #3d96f4
