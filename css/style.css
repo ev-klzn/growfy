@@ -1537,7 +1537,7 @@ body {
     position: absolute;
     width: 100%;
     height: .125rem;
-    background-color: #3d96f4
+    background-color: #fff
   }
   .icon-menu::before {
     top: 0
