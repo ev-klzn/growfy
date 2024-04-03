@@ -1248,7 +1248,7 @@ body {
     padding-left: .625rem
   }
   .page__hero {
-    padding-top: 4.375rem
+    padding-top: 6.875rem
   }
   .page__hero {
     padding-bottom: .9375rem
@@ -1919,14 +1919,14 @@ body {
       padding-left: calc(.625rem + 1.4375 * (100vw - 20rem)/ 61.875)
     }
   }
-  @supports (padding-top:clamp(4.375rem ,2.8598484848rem + 7.5757575758vw ,9.0625rem)) {
+  @supports (padding-top:clamp(6.875rem ,6.1679292929rem + 3.5353535354vw ,9.0625rem)) {
     .page__hero {
-      padding-top: clamp(4.375rem ,2.8598484848rem + 7.5757575758vw ,9.0625rem)
+      padding-top: clamp(6.875rem ,6.1679292929rem + 3.5353535354vw ,9.0625rem)
     }
   }
-  @supports not (padding-top:clamp(4.375rem ,2.8598484848rem + 7.5757575758vw ,9.0625rem)) {
+  @supports not (padding-top:clamp(6.875rem ,6.1679292929rem + 3.5353535354vw ,9.0625rem)) {
     .page__hero {
-      padding-top: calc(4.375rem + 4.6875 * (100vw - 20rem)/ 61.875)
+      padding-top: calc(6.875rem + 2.1875 * (100vw - 20rem)/ 61.875)
     }
   }
   @supports (padding-bottom:clamp(0.9375rem ,0.3314393939rem + 3.0303030303vw ,2.8125rem)) {
