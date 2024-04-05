@@ -1579,11 +1579,14 @@ body {
     justify-content: center
   }
   .action-header {
-    -webkit-column-gap: .9375rem;
-    -moz-column-gap: .9375rem;
-    column-gap: .9375rem
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem
   }
   .action-header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3.125rem;
     color: #fff;
     row-gap: 1.5rem;
     justify-content: center;
@@ -2463,18 +2466,18 @@ body {
       column-gap: calc(.9375rem + 1.25 * (100vw - 47.99875rem)/ 33.87625)
     }
   }
-  @supports ((-moz-column-gap:clamp(0.9375rem ,-0.8336062322rem + 3.6899007417vw ,2.1875rem)) or (column-gap:clamp(0.9375rem ,-0.8336062322rem + 3.6899007417vw ,2.1875rem))) {
+  @supports ((-moz-column-gap:clamp(1.25rem ,-0.0783296742rem + 2.7674255563vw ,2.1875rem)) or (column-gap:clamp(1.25rem ,-0.0783296742rem + 2.7674255563vw ,2.1875rem))) {
     .action-header {
-      -webkit-column-gap: clamp(.9375rem ,-.8336062322rem + 3.6899007417vw ,2.1875rem);
-      -moz-column-gap: clamp(.9375rem ,-.8336062322rem + 3.6899007417vw ,2.1875rem);
-      column-gap: clamp(.9375rem ,-.8336062322rem + 3.6899007417vw ,2.1875rem)
+      -webkit-column-gap: clamp(1.25rem ,-.0783296742rem + 2.7674255563vw ,2.1875rem);
+      -moz-column-gap: clamp(1.25rem ,-.0783296742rem + 2.7674255563vw ,2.1875rem);
+      column-gap: clamp(1.25rem ,-.0783296742rem + 2.7674255563vw ,2.1875rem)
     }
   }
-  @supports not ((-moz-column-gap:clamp(0.9375rem ,-0.8336062322rem + 3.6899007417vw ,2.1875rem)) or (column-gap:clamp(0.9375rem ,-0.8336062322rem + 3.6899007417vw ,2.1875rem))) {
+  @supports not ((-moz-column-gap:clamp(1.25rem ,-0.0783296742rem + 2.7674255563vw ,2.1875rem)) or (column-gap:clamp(1.25rem ,-0.0783296742rem + 2.7674255563vw ,2.1875rem))) {
     .action-header {
-      -webkit-column-gap: calc(.9375rem + 1.25 * (100vw - 47.99875rem)/ 33.87625);
-      -moz-column-gap: calc(.9375rem + 1.25 * (100vw - 47.99875rem)/ 33.87625);
-      column-gap: calc(.9375rem + 1.25 * (100vw - 47.99875rem)/ 33.87625)
+      -webkit-column-gap: calc(1.25rem + .9375 * (100vw - 47.99875rem)/ 33.87625);
+      -moz-column-gap: calc(1.25rem + .9375 * (100vw - 47.99875rem)/ 33.87625);
+      column-gap: calc(1.25rem + .9375 * (100vw - 47.99875rem)/ 33.87625)
     }
   }
   @supports ((-moz-column-gap:clamp(0.625rem ,-5.1310952548rem + 11.9921774104vw ,4.6875rem)) or (column-gap:clamp(0.625rem ,-5.1310952548rem + 11.9921774104vw ,4.6875rem))) {
