@@ -8,7 +8,7 @@
 	<meta name="robots" content="noindex, nofollow">
 	<!-- <style>body{opacity: 0;}</style> -->
 	<meta>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240409120050">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240416124931">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Growfy - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus um trist">
@@ -626,8 +626,9 @@
 							<p>Lorem ipsum dolor sit am consectetur adipiscing</p>
 						</div>
 						<div class="subscribe">
-							<form class="subscribe__form" action="files/sendmail/sendmail.php" method="POST">
-								<input type="text" name="form[email]" data-error="Error" data-required="email" autocomplete="off" placeholder="Enter your email" class="subscribe__input input">
+							<!-- method="POST" -->
+							<form netlify name="email" class="subscribe__form">
+								<input type="text" name="form[email]" data-error="Error" data-required="email" autocomplete="off" placeholder="Your email" class="subscribe__input input">
 								<button type="submit" class="subscribe__button button">
 									Subscribe
 								</button>
@@ -637,13 +638,14 @@
 				</div>
 				<div class="footer__copy">
 					Made by
-					<a class="ev-klzn" target="_blank" href="https://ev-klzn.github.io/">ev-klzn</a> @2024
+					<a class="ev-klzn" target="_blank" href="https://ev-klzn.github.io/">ev-klzn</a>
+					@2024
 				</div>
 			</div>
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20240409120050"></script>
+	<script src="js/app.min.js?_v=20240416124931"></script>
 </body>
 
 </html>
