@@ -1,3 +1,3 @@
 # growfy
 
-https://ev-klzn.github.io/growfy/
+https://ev-klzn.com/growfy/
